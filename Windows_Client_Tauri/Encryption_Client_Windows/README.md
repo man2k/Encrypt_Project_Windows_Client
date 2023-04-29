@@ -8,15 +8,12 @@ This template should help get you started developing with Tauri and React in Vit
 
 ### BUILD (To build installer):
 
-npm i
-npm run tauri dev
+npm i && npm run tauri dev
 
 ### TEST BUILD (To build a test case):
 
-npm i
-npm run build
+npm i && npm run tauri build
 
 ### Server Start:
 
-npm i
-npm run dev
+npm i && npm run dev
