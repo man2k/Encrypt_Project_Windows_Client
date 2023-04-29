@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  @apply leading-normal font-normal text-[rgba(255,255,255,0.87)] bg-[#242424];
+  font-family: "Courier New", Courier, monospace;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+  }
+}
+a {
+  @apply font-medium text-[#646cff] hover:text-[#535bf2];
+  text-decoration: inherit;
+}
+body {
+  @apply bg-[#242323] text-[white];
+  background-size: cover;
+  background-position: center center;
+}
+h1 {
+  @apply text-[3.2em] leading-[1.1];
+}
+/* Set the background color and font family for the entire page */
+body {
+  background-image: url("./assets/image.png");
+  background-size: 1530px;
+  width: auto;
+  font-family: sans-serif;
+  text-shadow: #000000;
+}
+input {
+  @apply bg-[#1f2937] text-[#fafafa] border border-green-800 rounded-xl py-2 px-4 placeholder-gray-500 focus:outline-none focus:shadow-xl focus:border-indigo-500;
+}
+
+/* Style the form container */
+.form-container {
+  @apply flex flex-col items-center justify-center h-[10vh];
+}
+
+/* Style the buttons */
+.button {
+  @apply bg-[#444] text-white cursor-pointer shadow-[0_2px_4px_rgba(0,0,0,0.4)] transition-all duration-[0.2s] ease-[ease-in-out] m-2.5 px-5 py-2.5 rounded-[5px] border-[none] hover:bg-[#666] hover:shadow-[0_4px_6px_rgba(0,0,0,0.4)];
+}
+
+/* Style the file input button */
+.file-input {
+  @apply px-5 py-2.5;
+  /* display: none; */
+}
+.file-upload-button {
+  @apply bg-[#444] text-white cursor-pointer shadow-[0_2px_4px_rgba(0,0,0,0.4)] transition-all duration-[0.2s] ease-[ease-in-out] m-2.5 px-5 py-2.5 rounded-[5px] border-[none] hover:bg-[#040404] hover:shadow-[0_4px_6px_rgba(0,0,0,0.4)];
+}
+#navbar {
+  @apply bg-[rgb(58,55,55)] fixed h-[50px] items-center shadow-[0_0_25px_0_black] inline text-white no-underline top-0 inset-x-0;
+}
+
+.react-select-container .react-select__menu-list {
+  @apply bg-[#242424];
+}
+.react-select-container .react-select__option:hover {
+  @apply bg-[#151414] font-[bold];
+  font-family: "Courier New", Courier, monospace;
+}
+.react-select-container .react-select__value-container {
+  @apply bg-[black] font-[bold];
+  font-family: "Courier New", Courier, monospace;
+}
+.react-select-container .react-select__value-container:focus {
+  @apply bg-[black] font-[bold];
+  font-family: "Courier New", Courier, monospace;
+}
+.react-select-container .react-select__control {
+  @apply bg-[black];
+}

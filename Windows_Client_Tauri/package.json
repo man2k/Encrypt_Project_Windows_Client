@@ -1,5 +1,5 @@
 {
-  "name": "encryption_client_windows",
+  "name": "windows_client_tauri",
   "private": true,
   "version": "0.0.0",
   "type": "module",
