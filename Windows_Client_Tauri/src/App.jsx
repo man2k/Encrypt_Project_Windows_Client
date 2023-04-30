@@ -55,6 +55,7 @@ function App() {
       await axios
         .post(`${baseUrl}/upload/${opname}`, formData, config)
         .then((res) => {
+          setUploaded(false);
           opname === "enc" ? setUploaded(true) : setUploadedDec(true);
           opname === "enc" ? setEncrypted(false) : setDecrypted(false);
         });
@@ -141,7 +142,6 @@ function App() {
                 uploaded={uploaded}
                 encrypted={encrypted}
                 UserChoice={UserChoice}
-                setUploaded={setUploaded}
               />
             </div>
             <div className="flex w-full">
