@@ -2,6 +2,7 @@ import React from "react";
 import { Select, Option } from "@material-tailwind/react";
 import ChipherList from "../assets/Data/ChipherList";
 const SelectBox = (props) => {
+  // console.log(props.UserChoice);
   return (
     <div className="w-full text-slate-200 font-mono text-xs gap-2 border-transparent bg-transparent rounded-lg border-2">
       <Select
@@ -12,8 +13,8 @@ const SelectBox = (props) => {
         color="red"
         size="md"
         variant="standard"
-        className="h-full uppercase text-slate-200 text-center text-base font-mono font-bold bg-gray-800 rounded-lg border-transparent"
-        label={`Select ${props.type} Type`}
+        className="flex h-full w-full uppercase text-slate-200 text-center justify-between px-2 py-2 flex-row-reverse gap-5 text-base font-mono font-bold bg-gray-800 rounded-lg border-transparent"
+        label={props.UserChoice ? "" : `Select ${props.type} Type`}
         onChange={(choice) => {
           props.setChoice(choice);
         }}
