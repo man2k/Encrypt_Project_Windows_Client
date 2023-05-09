@@ -61,7 +61,7 @@ const EncodeDecodeKey = () => {
       {encodeDecode ? (
         <h1 className="text-red-400 mb-5 mt-3 font-mono">Invisible Encoding</h1>
       ) : (
-        <h1 className="text-red-500 mb-5 mt-3">Invisible Decoding</h1>
+        <h1 className="text-red-500 mb-5 mt-3 font-mono">Invisible Decoding</h1>
       )}
       <div>
         <div>
