@@ -1,3 +1,4 @@
+## This project has been remastered and moved to : https://github.com/man2k/passdomNative.
 # ENCRYPTION DECRYPTION UEM
 
 This project is based on the concepts of data conceilment and encryption. It was originally written as web app but ported later to this windows client.
